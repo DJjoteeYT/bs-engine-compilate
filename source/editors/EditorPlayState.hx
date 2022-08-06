@@ -115,7 +115,7 @@ class EditorPlayState extends MusicBeatState
 		noteTypeMap.clear();
 		noteTypeMap = null;
 
-		scoreTxt = new FlxText(0, FlxG.height - 50, FlxG.width, "Acertos: 0 | Erros: 0", 20);
+		scoreTxt = new FlxText(0, FlxG.height - 50, FlxG.width, "Aciertos: 0 | Errores: 0", 20);
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		scoreTxt.scrollFactor.set();
 		scoreTxt.borderSize = 1.25;
@@ -134,7 +134,7 @@ class EditorPlayState extends MusicBeatState
 		stepTxt.borderSize = 1.25;
 		add(stepTxt);
 
-		var tipText:FlxText = new FlxText(10, FlxG.height - 24, 0, 'Aperte ESC ou Back do Android para voltar ao chart', 16);
+		var tipText:FlxText = new FlxText(10, FlxG.height - 24, 0, 'Presione ESC o back del Android para volver al chart', 16);
 		tipText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		tipText.borderSize = 2;
 		tipText.scrollFactor.set();
