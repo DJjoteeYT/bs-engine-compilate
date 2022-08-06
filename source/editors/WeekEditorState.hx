@@ -138,7 +138,7 @@ class WeekEditorState extends MusicBeatState
 		UI_box.selected_tab_id = 'Week';
 		add(UI_box);
 
-		var testecutscenaButton:FlxButton = new FlxButton(0, 650, "Teste de video", function() {
+		var testecutscenaButton:FlxButton = new FlxButton(0, 650, "probar video", function() {
 			MusicBeatState.switchState(new WeekEditorVideoState(('assets/videos/' + weekFile.cutscenombre)));
 		});
 		testecutscenaButton.screenCenter(X);
@@ -228,13 +228,13 @@ class WeekEditorState extends MusicBeatState
 			weekFile.temcutscene = dacutCheckbox.checked;
 		};
 
-		tab_group.add(new FlxText(songsInputText.x, songsInputText.y - 18, 0, 'Diretorios:'));
-		tab_group.add(new FlxText(opponentInputText.x, opponentInputText.y - 18, 0, 'Personagens do menu:'));
-		tab_group.add(new FlxText(backgroundInputText.x, backgroundInputText.y - 18, 0, 'Fundo do menu:'));
-		tab_group.add(new FlxText(displaysongsInputText.x, displaysongsInputText.y - 18, 0, 'Nomes das Músicas:'));
-		tab_group.add(new FlxText(displayNameInputText.x, displayNameInputText.y - 18, 0, 'Descriçao da week:'));
-		tab_group.add(new FlxText(cutscenombreInputText.x, cutscenombreInputText.y - 18, 0, 'Nome da cutscene:'));
-		tab_group.add(new FlxText(weekFileInputText.x, weekFileInputText.y - 18, 0, 'Nome da week:'));
+		tab_group.add(new FlxText(songsInputText.x, songsInputText.y - 18, 0, 'canciones:'));
+		tab_group.add(new FlxText(opponentInputText.x, opponentInputText.y - 18, 0, 'personajes de la week:'));
+		tab_group.add(new FlxText(backgroundInputText.x, backgroundInputText.y - 18, 0, 'fondo de la week:'));
+		tab_group.add(new FlxText(displaysongsInputText.x, displaysongsInputText.y - 18, 0, 'nombre de la musica:'));
+		tab_group.add(new FlxText(displayNameInputText.x, displayNameInputText.y - 18, 0, 'descripcion de la week:'));
+		tab_group.add(new FlxText(cutscenombreInputText.x, cutscenombreInputText.y - 18, 0, 'nombre del video:'));
+		tab_group.add(new FlxText(weekFileInputText.x, weekFileInputText.y - 18, 0, 'nombre de la week:'));
 		tab_group.add(songsInputText);
 		tab_group.add(opponentInputText);
 		tab_group.add(boyfriendInputText);
@@ -257,7 +257,7 @@ class WeekEditorState extends MusicBeatState
 		var tab_group = new FlxUI(null, UI_box);
 		tab_group.name = "Lock";
 
-		lockedCheckbox = new FlxUICheckBox(10, 30, null, null, "Week travada", 100);
+		lockedCheckbox = new FlxUICheckBox(10, 30, null, null, "week bloqueada", 100);
 		lockedCheckbox.callback = function()
 		{
 			weekFile.startUnlocked = !lockedCheckbox.checked;
@@ -268,7 +268,7 @@ class WeekEditorState extends MusicBeatState
 		weekBeforeInputText.focusGained = () -> FlxG.stage.window.textInputEnabled = true;
 		blockPressWhileTypingOn.push(weekBeforeInputText);
 		
-		tab_group.add(new FlxText(weekBeforeInputText.x, weekBeforeInputText.y - 28, 0, 'Nome da week que voce deve vencer\n para liberar essa:'));
+		tab_group.add(new FlxText(weekBeforeInputText.x, weekBeforeInputText.y - 28, 0, 'Nombre de la week que debes ganar\n para desbloquear esta:'));
 		tab_group.add(weekBeforeInputText);
 		tab_group.add(lockedCheckbox);
 		UI_box.addGroup(tab_group);
