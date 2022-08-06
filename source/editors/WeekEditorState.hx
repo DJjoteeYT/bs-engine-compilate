@@ -216,13 +216,13 @@ class WeekEditorState extends MusicBeatState
 		blockPressWhileTypingOn.push(weekFileInputText);
 		reloadWeekThing();
 
-		hideCheckbox = new FlxUICheckBox(10, weekFileInputText.y + 40, null, null, "Esconder week do modo historia?", 100);
+		hideCheckbox = new FlxUICheckBox(10, weekFileInputText.y + 40, null, null, "ocultar week del modo historia?", 100);
 		hideCheckbox.callback = function()
 		{
 			weekFile.hideStoryMode = hideCheckbox.checked;
 		};
 
-		dacutCheckbox = new FlxUICheckBox(10, weekFileInputText.y + 60, null, null, "Terá cutscenes?", 100);
+		dacutCheckbox = new FlxUICheckBox(10, weekFileInputText.y + 60, null, null, "tendrá videos?", 100);
 		dacutCheckbox.callback = function()
 		{
 			weekFile.temcutscene = dacutCheckbox.checked;
@@ -739,7 +739,7 @@ class WeekEditorFreeplayState extends MusicBeatState
 		iconInputText = new FlxUIInputText(10, bgColorStepperR.y + 70, 100, '', 8);
 		iconInputText.focusGained = () -> FlxG.stage.window.textInputEnabled = true;
 
-		var hideFreeplayCheckbox:FlxUICheckBox = new FlxUICheckBox(10, iconInputText.y + 30, null, null, "Esconder week do Freeplay?", 100);
+		var hideFreeplayCheckbox:FlxUICheckBox = new FlxUICheckBox(10, iconInputText.y + 30, null, null, "ocultar week del freeplay?", 100);
 		hideFreeplayCheckbox.checked = weekFile.hideFreeplay;
 		hideFreeplayCheckbox.callback = function()
 		{
