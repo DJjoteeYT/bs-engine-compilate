@@ -25,12 +25,12 @@ class FlashingStateDois extends MusicBeatState
 		add(bg);
 
 		warnText = new FlxText(0, 0, FlxG.width,
-			"Aviso HIPER ULTRA MEGA IMPORTANTE!\n\n
-			A BS Engine é baseada na Psych Engine e na Kade Engine!
-			com o objetivo de facilitar o trampo dos modders mobile
-			Alem de incluir coisas que sempre quissemos que existissem em ports\n
-			Agora sim, vambora!!! Aperte A para começar\n 
-			Ou aperte algum outro botao secreto para ver algo idiota antes.",
+			"LEE ESTO ANTES DE CONTINUAR!\n\n
+			Hola soy edd34r y yo fui el que se mató para traducir esto
+			Créditos a team Silver por el bs engine una breve explicación 
+			Bs engine facilita a hacer ports en psych engine mas que todo\n
+			Quise hacer esto por aburrimiento y ya XD agradeceria si te subscribes a mi canal\n 
+			Bueno eso es todo disfruta el APK apreta a para continuar .",
 			32);
 		warnText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
 		warnText.screenCenter(Y);
