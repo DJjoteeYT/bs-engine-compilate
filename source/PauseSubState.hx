@@ -19,7 +19,7 @@ class PauseSubState extends MusicBeatSubstate
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
 
 	var menuItems:Array<String> = [];
-	var menuItemsOG:Array<String> = ['Continuar', 'Reiniciar', 'Pular Musica', 'Menu de Chart', 'Editor de Personagens', 'Trocar Dificuldade', 'Modo Imortal', 'Botplay', 'Voltar para o menu'];
+	var menuItemsOG:Array<String> = ['reanudar', 'reiniciar song', 'saltar song', 'chart menu', 'editor de personajes', 'cambiar dificultad', 'modo practica', 'Botplay', 'volver al menu principal'];
 	var difficultyChoices = [];
 	var curSelected:Int = 0;
 
@@ -164,30 +164,30 @@ class PauseSubState extends MusicBeatSubstate
 
 			switch (daSelected)
 			{
-				case "Continuar":
+				case "reanudar":
 					close();
-				case 'Trocar Dificuldade':
+				case 'cambiar dificultad':
 					menuItems = difficultyChoices;
 					regenMenu();
-				case 'Modo Imortal':
+				case 'modo practica':
 					PlayState.practiceMode = !PlayState.practiceMode;
 					PlayState.usedPractice = true;
 					practiceText.visible = PlayState.practiceMode;
-				case 'Menu de Chart':
+				case 'chart menu':
 					MusicBeatState.switchState(new editors.ChartingState());
-				case "Editor de Personagens":
+				case "editor de personajes":
 					FlxG.switchState(new CharacterEditorState());
-				case "Reiniciar":
+				case "reiniciar song":
 					CustomFadeTransition.nextCamera = transCamera;
 					MusicBeatState.resetState();
 					FlxG.sound.music.volume = 0;
-				case "Pular Musica":
+				case "saltar song":
 					PlayState.instance.endSong();
 				case 'Botplay':
 					PlayState.cpuControlled = !PlayState.cpuControlled;
 					PlayState.usedPractice = true;
 					botplayText.visible = PlayState.cpuControlled;
-				case "Voltar para o menu":
+				case "volver al menu principal":
 					PlayState.deathCounter = 0;
 					PlayState.seenCutscene = false;
 					CustomFadeTransition.nextCamera = transCamera;
