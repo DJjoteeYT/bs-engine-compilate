@@ -19,7 +19,7 @@ class MasterEditorMenu extends MusicBeatState
 {
 	var options:Array<String> = [
 		'editor de weeks',
-		'editor de menús lol',
+		'editor de menus lol',
 		'editor de diálogos wtf',
 		'editor de portraits de dialogo',
 		'editor de personajes'
