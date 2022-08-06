@@ -296,14 +296,14 @@ class ChartingState extends MusicBeatState
 		UI_box.scrollFactor.set();
 
 		var text:String =
-		"Cima ou Baixo para se mover lentamente pelo chart
-		\nEsquerda ou Direita para mudar de seçao
+		"Arriba o abajo para moverse en el chart lentamente
+		\nizquiera o derecha para cambiar de seccion 
 		\nZ/X - Zoom in/out
 		\n
-		\nEsc ou 'teste' - para testar seu chart direto do editor
-		\nEnter ou botao back do Android - Para sair e jogar seu chart
-		\nQ/E ou '-/+' - Reduzem ou Aumentam a duraçao da nota
-		\nSpace ou 'Auto' - Para ou avança seu chart automaticamente";
+		\nEsc o 'probar' - para probar su chart directamente desde el editor
+		\nEnter o boton back del Android - Para salir y tocar tu chart
+		\nQ/E o '-/+' - Acortar o alargar la duración de la nota
+		\nSpace o 'Auto' - Detenga o avance automáticamente su chart";
 
 		var tipTextArray:Array<String> = text.split('\n');
 		for (i in 0...tipTextArray.length) {
@@ -348,7 +348,7 @@ class ChartingState extends MusicBeatState
         key_space.alpha = 0.75;
         add(key_space);
 
-		key_teste = new FlxUIButton(60, (key_space.y + key_space.height + 25), "Testar");
+		key_teste = new FlxUIButton(60, (key_space.y + key_space.height + 25), "probar");
         key_teste.setLabelFormat("VCR OSD Mono",24,FlxColor.BLACK,"center");
 		key_teste.resize(125,50);
         key_teste.alpha = 0.75;
