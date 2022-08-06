@@ -38,7 +38,7 @@ class PauseSubState extends MusicBeatSubstate
 			var diff:String = '' + CoolUtil.difficultyStuff[i][0];
 			difficultyChoices.push(diff);
 		}
-		difficultyChoices.push('Voltar');
+		difficultyChoices.push('Volver');
 
 		pauseMusic = new FlxSound().loadEmbedded(Paths.music('breakfast'), true, true);
 		pauseMusic.volume = 0;
@@ -201,7 +201,7 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.changedDifficulty = false;
 					PlayState.cpuControlled = false;
 
-				case 'Voltar':
+				case 'Volver':
 					menuItems = menuItemsOG;
 					regenMenu();
 			}
