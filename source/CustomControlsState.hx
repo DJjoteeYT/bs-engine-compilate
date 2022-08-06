@@ -37,7 +37,7 @@ class CustomControlsState extends MusicBeatSubstate
 	var leftArrow:FlxSprite;
 	var rightArrow:FlxSprite;
 							//'hitbox',
-	var controlitems:Array<String> = ['Controle Destro', 'Controle Canhoto','Teclado','Customizado', 'Hitbox'];
+	var controlitems:Array<String> = ['right control', 'left control','keyboard','Custom', 'Hitbox'];
 
 	var curSelected:Int = 0;
 
@@ -105,11 +105,11 @@ class CustomControlsState extends MusicBeatSubstate
 
 		// buttons
 
-		exitbutton = new FlxUIButton(FlxG.width - 650,25,"Sair");
+		exitbutton = new FlxUIButton(FlxG.width - 650,25,"Salir");
 		exitbutton.resize(125,50);
 		exitbutton.setLabelFormat("VCR OSD Mono",24,FlxColor.BLACK,"center");
 
-		var savebutton = new FlxUIButton((exitbutton.x + exitbutton.width + 25),25,"Sair e Salvar",() -> {
+		var savebutton = new FlxUIButton((exitbutton.x + exitbutton.width + 25),25,"guardar y salir",() -> {
 			save();
 			FlxG.switchState(new OptionsState());
 		});
