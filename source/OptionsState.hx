@@ -37,7 +37,7 @@ using StringTools;
 // TO DO: Redo the menu creation system for not being as dumb
 class OptionsState extends MusicBeatState
 {
-	var options:Array<String> = ['Configuracoes', 'Estilo de nota', 'Controles Mobile', 'Controles para Teclado', 'voltar ao menu principal'];
+	var options:Array<String> = ['Configuraciones', 'color de nota', 'mobile controls', 'keyboard control', 'volver al menu principal'];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
@@ -157,19 +157,19 @@ class OptionsState extends MusicBeatState
 			FlxG.sound.play(Paths.sound('secretSound'), 0.7);
 
 			switch(options[curSelected]) {
-				case 'Configuracoes':
+				case 'Configuraciones':
 					openSubState(new PreferencesSubstate());
 
-				case 'Estilo de nota':
+				case 'color de nota':
 					openSubState(new NotesSubstate());
 
-				case 'Controles Mobile':
+				case 'mobile controls':
 					MusicBeatState.switchState(new CustomControlsState());
 					
-				case 'Controles para Teclado':
+				case 'keyboard control':
 					openSubState(new ControlsSubstate());
 					
-				case 'voltar ao menu principal':
+				case 'volver al menu principal':
 					MusicBeatState.switchState(new MainMenuState());
 
 			}
