@@ -2053,7 +2053,7 @@ class PlayState extends MusicBeatState
 			scoreTxt.text = 'Puntos: ' + songScore + ' | score: ' + ratingString;
 			judgementCounter.text = 'Sicks: 0 \nGoods: 0\nBads: 0\nShits: 0\nErrores: 0\n jaja que';
 		} else {
-			judgementCounter.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nErros: ${songMisses}\nkek';
+			judgementCounter.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nErrores: ${songMisses}\nkek';
 			scoreTxt.text = 'Puntos: ' + songScore + ' | score: ' + ratingString + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)';
 		}
 
