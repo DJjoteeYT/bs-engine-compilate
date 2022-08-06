@@ -163,7 +163,7 @@ class FreeplayState extends MusicBeatState
 		textBG.alpha = 0.6;
 		add(textBG);
 		#if PRELOAD_ALL
-		var leText:String = "Aperte X para ouvir uma prévia da música";
+		var leText:String = "Presiona X para escuchar una vista previa de la canción.";
 		#else
 		var leText:String = "Press RESET to Reset your Score and Accuracy.";
 		#end
@@ -231,7 +231,7 @@ class FreeplayState extends MusicBeatState
 			ratingSplit[1] += '0';
 		}
 
-		scoreText.text = 'RECORDE: ' + lerpScore + ' (' + ratingSplit.join('.') + '%)';
+		scoreText.text = 'SCORE: ' + lerpScore + ' (' + ratingSplit.join('.') + '%)';
 		positionHighscore();
 
 		var upP = controls.UI_UP_P;
