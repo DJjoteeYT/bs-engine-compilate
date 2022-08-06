@@ -94,7 +94,7 @@ class DialogueEditorState extends MusicBeatState
 		addEditorBox();
 		FlxG.mouse.visible = true;
 
-		var addLineText:FlxText = new FlxText(10, 10, FlxG.width - 20, 'Aperte O ou - para remover a fala atual, Aperte P ou + para adicionar uma fala nova.', 8);
+		var addLineText:FlxText = new FlxText(10, 10, FlxG.width - 20, 'Presione O o - para eliminar el texto actual, Presione P o + para agregar un nuevo texto.', 8);
 		addLineText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		addLineText.scrollFactor.set();
 		add(addLineText);
@@ -254,13 +254,13 @@ class DialogueEditorState extends MusicBeatState
 		characterAnimSpeed();
 
 		if(character.animation.curAnim != null) {
-			animText.text = 'Animacao: ' + character.jsonFile.animations[curAnim].anim + ' (' + (curAnim + 1) +' / ' + character.jsonFile.animations.length + ') - Aperte cima/baixo para trocar a expressao';
+			animText.text = 'Animacion: ' + character.jsonFile.animations[curAnim].anim + ' (' + (curAnim + 1) +' / ' + character.jsonFile.animations.length + ') - Pulse arriba/abajo para cambiar la expresion';
 		}} else {
-			animText.text = 'Escreva o nome certo do boneco';
+			animText.text = 'Escribe el nombre correcto del boceto.';
 		}
 	}
 
-	private static var DEFAULT_TEXT:String = "kek";
+	private static var DEFAULT_TEXT:String = "puto el que lo lea";
 	private static var DEFAULT_SPEED:Float = 0.05;
 	private static var DEFAULT_BUBBLETYPE:String = "normal";
 	function reloadText(speed:Float = 0.05) {
@@ -306,7 +306,7 @@ class DialogueEditorState extends MusicBeatState
 					curAnim = 0;
 					if(character.jsonFile.animations.length > curAnim && character.jsonFile.animations[curAnim] != null) {
 						character.playAnim(character.jsonFile.animations[curAnim].anim, daText.finishedText);
-						animText.text = 'Animacao: ' + character.jsonFile.animations[curAnim].anim + ' (' + (curAnim + 1) +' / ' + character.jsonFile.animations.length + ') - Aperte cima/baixo para trocar a expressao';
+						animText.text = 'Animacao: ' + character.jsonFile.animations[curAnim].anim + ' (' + (curAnim + 1) +' / ' + character.jsonFile.animations.length + ') - Pulse arriba/abajo para cambiar la expresion';
 					}} else {
 						animText.text = 'Sem personagens por enquanto';
 					}
@@ -403,7 +403,7 @@ class DialogueEditorState extends MusicBeatState
 						character.playAnim(animToPlay, daText.finishedText);
 						dialogueFile.dialogue[curSelected].expression = animToPlay;
 					}
-					animText.text = 'Animacao: ' + animToPlay + ' (' + (curAnim + 1) +' / ' + character.jsonFile.animations.length + ') - Aperte cima/baixo para trocar a expressao';
+					animText.text = 'Animacao: ' + animToPlay + ' (' + (curAnim + 1) +' / ' + character.jsonFile.animations.length + ') - Pulse arriba/abajo para cambiar la expresion';
 				}
 				if(controlText[i]) {
 					changeText(negaMult[i]);
@@ -454,13 +454,13 @@ class DialogueEditorState extends MusicBeatState
 				}
 			}
 			character.playAnim(character.jsonFile.animations[curAnim].anim, daText.finishedText);
-			animText.text = 'Animacao: ' + character.jsonFile.animations[curAnim].anim + ' (' + (curAnim + 1) +' / ' + leLength + ') - Aperte cima/baixo para trocar a expressao';
+			animText.text = 'Animacao: ' + character.jsonFile.animations[curAnim].anim + ' (' + (curAnim + 1) +' / ' + leLength + ') - Pulse arriba/abajo para cambiar la expresion';
 		} else {
 			animText.text = 'ERROR! NO ANIMATIONS FOUND';
 		}
 		characterAnimSpeed();
 
-		selectedText.text = 'Fala: (' + (curSelected + 1) + ' / ' + dialogueFile.dialogue.length + ') - Aperte para direita/esquerda para trocar entre as falas';
+		selectedText.text = 'Fala: (' + (curSelected + 1) + ' / ' + dialogueFile.dialogue.length + ') - Pulse derecha/izquierda para cambiar de línea';
 	}
 
 	function characterAnimSpeed() {
