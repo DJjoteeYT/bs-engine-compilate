@@ -21,7 +21,7 @@ class MasterEditorMenu extends MusicBeatState
 		'editor de weeks',
 		'editor de menus lol',
 		'editor de diálogos wtf',
-		'editor de portraits de dialogo',
+		'editor de portraits',
 		'editor de personajes'
 	];
 	private var grpTexts:FlxTypedGroup<Alphabet>;
@@ -86,7 +86,7 @@ class MasterEditorMenu extends MusicBeatState
 					MusicBeatState.switchState(new WeekEditorState());
 				case 'editor de menus lol':
 					MusicBeatState.switchState(new MenuCharacterEditorState());
-				case 'editor de portraits de dialogo':
+				case 'editor de portraits':
 					LoadingState.loadAndSwitchState(new DialogueCharacterEditorState(), false);
 				case 'editor de dialogos wtf':
 					LoadingState.loadAndSwitchState(new DialogueEditorState(), false);
