@@ -152,7 +152,7 @@ class DialogueCharacterEditorState extends MusicBeatState
 		FlxG.mouse.visible = true;
 		updateCharTypeBox();
 		
-		key_space = new FlxUIButton(60, 60, "Próximo"); //que tal tirar os pngs? kek
+		key_space = new FlxUIButton(60, 60, "siguiente"); //que tal tirar os pngs? kek
         key_space.setLabelFormat("VCR OSD Mono",24,FlxColor.BLACK,"center");
 		key_space.resize(125,50);
         key_space.alpha = 0.75;
@@ -409,7 +409,7 @@ class DialogueCharacterEditorState extends MusicBeatState
 		updateTextBox();
 	}
 
-	private static var DEFAULT_TEXT:String = 'Lorem ipsum dolor sit amet';
+	private static var DEFAULT_TEXT:String = 'hola este es un dialogo de prueba';
 	function reloadText() {
 		if(daText != null) {
 			daText.killTheTimer();
