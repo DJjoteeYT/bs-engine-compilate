@@ -454,13 +454,13 @@ class DialogueEditorState extends MusicBeatState
 				}
 			}
 			character.playAnim(character.jsonFile.animations[curAnim].anim, daText.finishedText);
-			animText.text = 'Animacao: ' + character.jsonFile.animations[curAnim].anim + ' (' + (curAnim + 1) +' / ' + leLength + ') - Pulse arriba/abajo para cambiar la expresion';
+			animText.text = 'animacion: ' + character.jsonFile.animations[curAnim].anim + ' (' + (curAnim + 1) +' / ' + leLength + ') - Pulse arriba/abajo para cambiar la expresion';
 		} else {
 			animText.text = 'ERROR! NO ANIMATIONS FOUND';
 		}
 		characterAnimSpeed();
 
-		selectedText.text = 'Fala: (' + (curSelected + 1) + ' / ' + dialogueFile.dialogue.length + ') - Pulse derecha/izquierda para cambiar de línea';
+		selectedText.text = 'texto: (' + (curSelected + 1) + ' / ' + dialogueFile.dialogue.length + ') - Pulse derecha/izquierda para cambiar de línea';
 	}
 
 	function characterAnimSpeed() {
