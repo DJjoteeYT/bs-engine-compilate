@@ -446,10 +446,10 @@ class TitleState extends MusicBeatState
 			switch (curBeat)
 			{
 				case 2:
-					createCoolText(['BS Engine Mobile'], 45);
+					createCoolText(['BS Engine Mobile Traducido'], 45);
 				// credTextShit.visible = true;
 				case 3:
-					addMoreText('Por Team Silver', 45);
+					addMoreText('Por Team Silver y edd34r', 45);
 				// credTextShit.text += '\npresent...';
 				// credTextShit.addText();
 				case 4:
@@ -458,9 +458,9 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = 'In association \nwith';
 				// credTextShit.screenCenter();
 				case 5:
-					createCoolText(['Isso e um mod'], -60);
+					createCoolText(['esto es un mod xdd'], -60);
 				case 6:
-					addMoreText('desse jooj aqui kek', -60);
+					addMoreText('matenme xd', -60);
 					logoSpr.visible = true;
 				// credTextShit.text += '\nNewgrounds';
 				case 8:
@@ -468,7 +468,7 @@ class TitleState extends MusicBeatState
 					logoSpr.visible = false;
 				// credTextShit.visible = false;
 
-				// credTextShit.text = 'Shoutouts Tom Fulp';
+				// credTextShit.text = 'Saludos de Tom Fulp';
 				// credTextShit.screenCenter();
 				case 9:
 					createCoolText([curWacky[0]]);
@@ -488,7 +488,7 @@ class TitleState extends MusicBeatState
 					addMoreText('BS Engine');
 				// credTextShit.text += '\nNight';
 				case 15:
-					addMoreText('Mobile'); // credTextShit.text += '\nFunkin';
+					addMoreText('Mobile Traducido'); // credTextShit.text += '\nFunkin';
 
 				case 16: //sussy erro
 					skipIntro();
