@@ -115,7 +115,7 @@ class EditorPlayState extends MusicBeatState
 		noteTypeMap.clear();
 		noteTypeMap = null;
 
-		scoreTxt = new FlxText(0, FlxG.height - 50, FlxG.width, "Aciertos: 0 | Errores: 0", 20);
+		scoreTxt = new FlxText(0, FlxG.height - 50, FlxG.width, "aciertos: 0 | errores: 0", 20);
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		scoreTxt.scrollFactor.set();
 		scoreTxt.borderSize = 1.25;
@@ -489,7 +489,7 @@ class EditorPlayState extends MusicBeatState
 		}
 
 		keyShit();
-		scoreTxt.text = 'Acertos: ' + songHits + ' | Erros: ' + songMisses;
+		scoreTxt.text = 'aciertos: ' + songHits + ' | errores: ' + songMisses;
 		beatTxt.text = 'Beat: ' + curBeat;
 		stepTxt.text = 'Step: ' + curStep;
 		super.update(elapsed);
