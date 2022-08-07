@@ -48,7 +48,7 @@ class DialogueCharacterEditorState extends MusicBeatState
 	\nQ/E - Zoom out/in
 	\nR - Reset Camera
 	\nH - Toggle Speech Bubble
-	\n nota do porter, infelizmente tu vai precisar de teclado para isso ;-;
+	\n nota para el porter, desafortunadamente necesitara un teclado para esto XD
 	\nSpace - Reset text';
 
 	private static var TIP_TEXT_OFFSET:String =
