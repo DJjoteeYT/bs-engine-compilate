@@ -254,7 +254,7 @@ class DialogueEditorState extends MusicBeatState
 		characterAnimSpeed();
 
 		if(character.animation.curAnim != null) {
-			animText.text = 'Animacion: ' + character.jsonFile.animations[curAnim].anim + ' (' + (curAnim + 1) +' / ' + character.jsonFile.animations.length + ') - Pulse arriba/abajo para cambiar la expresion';
+			animText.text = 'animacion: ' + character.jsonFile.animations[curAnim].anim + ' (' + (curAnim + 1) +' / ' + character.jsonFile.animations.length + ') - Pulse arriba/abajo para cambiar la expresion';
 		}} else {
 			animText.text = 'Escribe el nombre correcto del boceto.';
 		}
@@ -306,7 +306,7 @@ class DialogueEditorState extends MusicBeatState
 					curAnim = 0;
 					if(character.jsonFile.animations.length > curAnim && character.jsonFile.animations[curAnim] != null) {
 						character.playAnim(character.jsonFile.animations[curAnim].anim, daText.finishedText);
-						animText.text = 'Animacao: ' + character.jsonFile.animations[curAnim].anim + ' (' + (curAnim + 1) +' / ' + character.jsonFile.animations.length + ') - Pulse arriba/abajo para cambiar la expresion';
+						animText.text = 'animacion: ' + character.jsonFile.animations[curAnim].anim + ' (' + (curAnim + 1) +' / ' + character.jsonFile.animations.length + ') - Pulse arriba/abajo para cambiar la expresion';
 					}} else {
 						animText.text = 'Sem personagens por enquanto';
 					}
@@ -403,7 +403,7 @@ class DialogueEditorState extends MusicBeatState
 						character.playAnim(animToPlay, daText.finishedText);
 						dialogueFile.dialogue[curSelected].expression = animToPlay;
 					}
-					animText.text = 'Animacao: ' + animToPlay + ' (' + (curAnim + 1) +' / ' + character.jsonFile.animations.length + ') - Pulse arriba/abajo para cambiar la expresion';
+					animText.text = 'animacion: ' + animToPlay + ' (' + (curAnim + 1) +' / ' + character.jsonFile.animations.length + ') - Pulse arriba/abajo para cambiar la expresion';
 				}
 				if(controlText[i]) {
 					changeText(negaMult[i]);
